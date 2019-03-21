@@ -23,7 +23,7 @@ public class MockRealTimeData extends Thread {
 	private ProducerConfig createProducerConfig() {
 		Properties props = new Properties();
 		props.put("serializer.class", "kafka.serializer.StringEncoder");
-		props.put("metadata.broker.list", "node1:9092,node2:9092,node3:9092");
+		props.put("metadata.broker.list", "hadoop01:9092,hadoop02:9092,hadoop03:9092");
 		return new ProducerConfig(props);
 	}
 	
